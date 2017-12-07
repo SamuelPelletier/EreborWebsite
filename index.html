@@ -20,7 +20,7 @@
 
 <body>
 
-    <div id="wrapper">
+    <div id="wrapper" class="toggled">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -29,6 +29,9 @@
                     <a href="#">
                         Start Bootstrap
                     </a>
+                </li>
+                <li class="weather">
+
                 </li>
                 <li>
                     <a href="#" onclick="push(1)">Dashboard</a>
@@ -57,10 +60,8 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-            </div>
             <div class="container">
+
             </div>
         </div>
         <!-- /#page-content-wrapper -->
@@ -72,15 +73,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="./js/buffer.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+    <script src="js/stuffer.js"></script>
 
 </body>
 
