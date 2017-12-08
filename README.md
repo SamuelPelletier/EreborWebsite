@@ -44,4 +44,4 @@ De plus il devait être possible de se signaler auprés des autres utilisateurs 
 et donc de pouvoir reconduire des personnes.\
 Enfin le site Web devait permettre de prévenir des risques lié à un événement.
 
-Contient également l'APK de l'application Android
+Contient également le projet et l'APK de l'application Android ainsi que l'ensemble des maquettes dans le dossier maquette.

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GPSam</string>
+    <string name="siteweb">Site Web</string>
+    <string name="siteweb_lien">http://pjkwozlo.preview.infomaniak.website</string>
+    <string name="apropos">A propos</string>
+    <string name="apropos_lien">http://ciel-azur.com/nuit_info/a_propos.html</string>
+    <string name="Fragment1_titre">Secours</string>
+    <string name="Fragment2_titre">Signaler</string>
+    <string name="Fragment3_titre">Find Sam</string>
+</resources>
