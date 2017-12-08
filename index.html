@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Sécurité routiere</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +18,26 @@
 
 </head>
 
+<style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+        z-index: 0;
+        width: 90%;
+        height:80%;
+        position: absolute;
+    }
+    html,body,#wrapper, #page-content-wrapper, .container{
+        height:100%;
+    }
+    .weather > p{
+        margin:0;
+    }
+    .weather > p:nth-child(1),p:nth-child(2),p:nth-child(3), p:nth-child(4){
+        height: 30px;
+    }
+</style>
+
 <body>
 
     <div id="wrapper" class="toggled">
@@ -25,31 +45,25 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand">
+                <li class="sidebar-brand" style="height: auto;">
                     <a href="#">
-                        Start Bootstrap
+                        <img src="./securite_logo.jpg" style="padding: 10px;height: 5em;"/>
                     </a>
                 </li>
                 <li class="weather">
 
                 </li>
                 <li>
-                    <a href="#" onclick="push(1)">Dashboard</a>
+                    <a href="#" onclick="push(0)">Traffic</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="#" onclick="push(1)">Prévention</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="#" onclick="push(2)">Créateur d'événement</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#" onclick="push(3)">À propos</a>
                 </li>
             </ul>
         </div>
@@ -58,7 +72,6 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container">
-
             </div>
         </div>
         <!-- /#page-content-wrapper -->
@@ -69,6 +82,10 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiYJC037fK11cuu5SEBkMmDeZmTP3Ub_c&callback=initMap">
+    </script>
 
     <script src="js/stuffer.js"></script>
 
