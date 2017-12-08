@@ -43,3 +43,5 @@ Elle devait permettre également de pouvoir dire au utilisateur les risques proc
 De plus il devait être possible de se signaler auprés des autres utilisateurs que vous êtes un SAM 
 et donc de pouvoir reconduire des personnes.\
 Enfin le site Web devait permettre de prévenir des risques lié à un événement.
+
+Contient également l'APK de l'application Android
