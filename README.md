@@ -1,62 +1,45 @@
-# [Start Bootstrap - Simple Sidebar](https://startbootstrap.com/template-overviews/simple-sidebar/)
+Accés : \
+https://pjkwozlo.preview.infomaniak.website
 
-[Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/) is an off canvas sidebar navigation template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+Installation : 
 
-## Preview
+1) Télécharger le git (https://github.com/SamuelPelletier/EreborWebsite)
+2) Installer une base de donnée et activer PDO
+3) Exécuter le script SQL
+4) Installer un serveur PHP 7.0
+5) Ajouter des données factices dans la base de données
 
-[![Simple Sidebar Preview](https://startbootstrap.com/assets/img/templates/simple-sidebar.jpg)](https://blackrockdigital.github.io/startbootstrap-simple-sidebar/)
+Une fois les serveurs lancer accéder au site web.
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-simple-sidebar/)**
+Fonctionnalités : \
+A) Géolocalisation automatique est quasiment obligatoire \
+B) Météo en fonction de la géolocalisation \
+C) Connexion et inscription d'un utilisateur \
+D) Affichage du trafic en temps réel en fonction de la géolocalisation \
+E) Lien pour les transports en commun pour les principales ville de France \
+F) Une page d'à propos \
+G) Un kodami code caché \
+H) Un calendrier de l'avent sur le théme d'Ubisoft
 
-## Status
+Information technique : \
+Le site web est réalisé sur 90% en une seul page qui est recharger par des script JS. \
+Les 10% restant sont les deux formulaires de connexion et d'inscription.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-simple-sidebar/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-simple-sidebar.svg)](https://www.npmjs.com/package/startbootstrap-simple-sidebar)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-simple-sidebar.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-simple-sidebar)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-simple-sidebar/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-simple-sidebar)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-simple-sidebar/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-simple-sidebar?type=dev)
+La solution du konami code est haut, haut, bas, bas, gauche, droite, gauche, droite, b,a,b,a. \
+Nous avons utilisé un simple script JS pour le réaliser et ensuite nous l'avons offusqué. \
+Ce kodami code permet d'accéder au calendrier de l'avant sur le théme d'Ubisoft. 
 
-## Download and Installation
+Nous avons utilisé deux API pour créer ce projet, celle de google pour google traffic et celle de 
+yahoo pour la météo.
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/simple-sidebar/)
-* Install via npm: `npm i startbootstrap-simple-sidebar`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-simple-sidebar.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar)
+Nous avons également un certificat SSL afin d'utiliser la géolocalisation de maniére sécurisé.
 
-## Usage
+Enfin nous avons créer une mini api rest afin de communiquer avec notre application Android (GPSam)
 
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/simple-sidebar/).
-
-## Custom Builds
-
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/gh-pages/LICENSE) license.
+Projet : \
+Notre projet consiste à prévenir les utilisateurs des risques que se soit par la météo ou le traffic.\
+Nous avons choisis de faire une application afin d'appeler les secours le plus rapidement possible.\ 
+Elle devait permettre également de pouvoir dire au utilisateur les risques proches sur la route.\
+De plus il devait être possible de se signaler auprés des autres utilisateurs que vous êtes un SAM 
+et donc de pouvoir reconduire des personnes.\
+Enfin le site Web devait permettre de prévenir des risques lié à un événement.

@@ -25,7 +25,6 @@ function push(val) {
             break;
         case 2:
             $(".container").html('<form action="./php/logincheck.php" method="post"> <table> <tr><td>E-mail : </td><td><input type="text" name="userMail" /></td></tr></br> <tr><td>Password : </td><td><input type="password" name="userPassword" /></td></tr></br> </table> <input type="submit" name="submit" value="login" /> <a href="#" onclick="push(4)">registre</a> </form>')
-
             break;
         case 3:
             $(".container").html('<h1>À propos</h1> <p>Application réalisée au campus TechnoLac du Bourget-du-Lac par l\'équipe "Erebor" dans le cadre de la Nuit de l\'Informatique 2017.</p> <h2>Membres</h2> <a href="mailto:samuel.pelletier@etu.univ-savoie.fr">Samuel Pelletier</a> <br /> <a href="mailto:loideh74@gmail.com">Loic Dehours</a> <br /> <a href="mailto:juju7397@gmail.com">Julien Aimonier-Davat</a> <br /> <a href="mailto:lei.zhang@etu.univ-savoie.fr">Lei Zhang</a> <br /> <a href="mailto:shuyuan.lyu@etu.univ-savoie.fr">Lyu Shuyuan</a> <br /> <a href="mailto:jia.qin@etu.univ-savoie.fr">Jia Qin</a> <br /> <a href="mailto:abdelghafour.driowya@etu.univ-smb.fr">Abdelghafour Driowya</a> <br /> <a href="mailto:juliettebois@icloud.com">Juliette Bois</a> <br /> <a href="mailto:cfriedrich1@gmail.com">Christian Friedrich</a> <br /> <a href="mailto:bastienmonin@gmail.com">Bastien Monin</a> <br /> <a href="mailto:teddy.ruppin@hotmail.fr">Teddy Ruppin</a> <br /> <a href="mailto:hugues-reynaud@orange.fr">Reynaud Hugues</a>')
@@ -130,4 +129,44 @@ function parse_query_string(query) {
         }
     }
     return query_string;
+}
+
+function calendar() {
+    var days = [
+        [896, 378],
+        [842, 174],
+        [774, 444],
+        [1033, 606],
+        [924, 305],
+        [797, 278],
+        [877, 532],
+        [955, 507],
+        [978, 272],
+        [1096, 623],
+        [880, 242],
+        [727, 486],
+        [928, 139],
+        [1036, 487],
+        [936, 204],
+        [816, 384],
+        [800, 517],
+        [974, 432],
+        [847, 322],
+        [882, 453],
+        [869, 115],
+        [982, 356],
+        [1055, 550],
+        [885, 39]
+    ];
+    var i = 1;
+    days.forEach(function (item) {
+        //$("body").append("<div id=" + i + " style='position:absolute;left:" + item[0] + "px;top:" + item[1] + "px;z-index:12;' onclick='displayPresent(" + i + ")'> </div>");
+        i++
+    });
+
+}
+
+function displayPresent(val) {
+
+
 }

@@ -1,6 +1,5 @@
 ﻿<?php
     error_reporting(E_ERROR | E_PARSE);
-    if(isset($_POST["submit"]) && $_POST["submit"] == "login"){
         $mail = $_POST["userMail"];
         $psw = $_POST["userPassword"];
 
@@ -29,14 +28,8 @@
                     echo "</br>";
                   }
                 }
-                  header ("location:https://pjkwozlo.preview.infomaniak.website");
               }
             }else{
                 echo "<script>alert('le mél ou le mot de passe n\'est pas correct');history.go(-1);</script>";
-                header ("location:https://pjkwozlo.preview.infomaniak.website?page=2");
             }
         }
-    }else{
-        echo "<script>alert('echoué'); history.go(-1);</script>";
-        header ("location:https://pjkwozlo.preview.infomaniak.website?page=2");
-    }

@@ -22,7 +22,6 @@
                 $rows = $statement->fetchAll();
                 if($row){
                     echo "<script>alert('ce E-mail est déjà registré'); history.go(-1);</script>";
-                    header ("location:https://pjkwozlo.preview.infomaniak.website?page=4");
                 } else {
                     $statement = $c -> prepare('INSERT INTO user (userMail,userFName,userLName,userPassword)
                     values(:userMail,
@@ -38,15 +37,12 @@
 
                     if($statement){
                         echo "<script>alert('registre success'); history.go(-1);</script>";
-                        header ("location:https://pjkwozlo.preview.infomaniak.website");
                     }else{
                         echo "<script>alert('le system est occupé maintenant'); history.go(-1);</script>";
-                        header ("location:https://pjkwozlo.preview.infomaniak.website?page=4");
                     }
                 }
         }
     }else{
         echo "<script>alert('echoue de registre'); history.go(-1);</script>";
-        header ("location:https://pjkwozlo.preview.infomaniak.website?page=4");
     }
 ?>
